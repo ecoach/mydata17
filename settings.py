@@ -19,7 +19,7 @@ TEMPLATE_DEBUG = DEBUG
 DB_NAME    = 'ecoach17'
 DPROJ_NAME = 'mydata17'
 MPROJ_NAME = 'mts17'
-COACH_NAME = 'Physics 135,140,235,240: Fall 2013'
+COACH_NAME = 'Physics 135,140,235,240: Winter 2014'
 COACH_URL = 'coach17'
 COACH_EMAIL = 'ECoachHelpPhysics@umich.edu'
 
