@@ -57,19 +57,12 @@ INT_GOAL_GRADE_CHOICES = (
     ('1', 'C- or below'),
 )
 
-TEXT_PTPREVIOUSSTUDY_CHOICES = (
-    ('none', "I haven't"),
-    ('lecturenotes', 'I have read over some of the lecture notes'),
-    ('lecturevideos', 'I have watched some of the lecture videos'),
-    ('readbook', 'I have read over some of the book'),
-    ('bookprobs', 'I have worked through some of the problems from the book'),
-    ('masteringphysics', 'I have reviewed and/or reworked some of the mastering physics problems'),
-    ('officehours', 'I have gone to office hours'),
-    ('physicshelproom', 'I have gone to the physics help room'),
-    ('studygroup', 'I have gone to a study group'),
-    ('problemroulette', 'I have used problem roulette'),
-    ('practiceexam', 'I have solved some of the problems from the practice exams'),
-    ('outsideresource', 'I have used resources outside of the course'),
+INT_ABCDE_CHOICES = (
+    ('1', 'A'),
+    ('2', 'B'),
+    ('3', 'C'),
+    ('4', 'D'),
+    ('5', 'E'),
 )
 
 INT_HS_MATH_CHOICES = (
@@ -258,6 +251,21 @@ INT_ACT_MATH_CHOICES = (
     ('15', '15 or below'),
 )
 
+TEXT_PTPREVIOUSSTUDY_CHOICES = (
+    ('none', "I haven't"),
+    ('lecturenotes', 'I have read over some of the lecture notes'),
+    ('lecturevideos', 'I have watched some of the lecture videos'),
+    ('readbook', 'I have read over some of the book'),
+    ('bookprobs', 'I have worked through some of the problems from the book'),
+    ('masteringphysics', 'I have reviewed and/or reworked some of the mastering physics problems'),
+    ('officehours', 'I have gone to office hours'),
+    ('physicshelproom', 'I have gone to the physics help room'),
+    ('studygroup', 'I have gone to a study group'),
+    ('problemroulette', 'I have used problem roulette'),
+    ('practiceexam', 'I have solved some of the problems from the practice exams'),
+    ('outsideresource', 'I have used resources outside of the course'),
+)
+
 INT_YES_NO_CHOICES = (
     ('1', 'yes'),
     ('0', 'no'),
@@ -275,6 +283,7 @@ TEXT_MOVIE_CHOICES = (
     ('StarTrek', 'Star Trek (J.J. Abrams movies with references to previous shows and movies)'),
     ('LOTR', 'Lord of the Rings (Trilogy with references to "The Hobbit")'),
     ('Harry', 'Harry Potter (All movies)'),
+    ('Disney', 'Disney/Pixar (All movies)'),
     ('no', "I don't like any of these movies"),
     ('none', 'I have not seen any of these movies'),
 )
@@ -566,6 +575,13 @@ class Source1(SubjectData):
     Writing_Prompt_7 = models.TextField(null=True, blank=True)
     Writing_Prompt_8 = models.TextField(null=True, blank=True)
     Writing_Prompt_9 = models.TextField(null=True, blank=True)
+    w1p1 = models.IntegerField(null=True, blank=True)
+    w2p1 = models.IntegerField(null=True, blank=True)
+    w2p2 = models.IntegerField(null=True, blank=True)
+    w3p1 = models.IntegerField(null=True, blank=True)
+    w3p2 = models.IntegerField(null=True, blank=True)
+    w4p1 = models.IntegerField(null=True, blank=True)
+    w4p2 = models.IntegerField(null=True, blank=True)
     FeedbackExam1_ECoach_StudyHabits = models.IntegerField(null=True, blank=True)
     FeedbackExam1_ECoach_ExamPrep = models.IntegerField(null=True, blank=True)
     FeedbackExam1_ECoach_Helpful = models.TextField(null=True, blank=True)
