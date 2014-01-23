@@ -514,6 +514,8 @@ class Source1(SubjectData):
     ProblemRoulette_Time_PreExam_2 = models.FloatField(null=True, blank=True)
     ProblemRoulette_PreExam_3 = models.FloatField(null=True, blank=True)
     ProblemRoulette_Time_PreExam_3 = models.FloatField(null=True, blank=True)
+    GPA_Conversion = models.FloatField(null=True, blank=True)
+    Compare_Goal_Grade_GPA = models.FloatField(null=True, blank=True)
     Confidence_PreExam1 = models.CharField(max_length=100, null=True, blank=True)
     Confidence_PreExam2 = models.CharField(max_length=100, null=True, blank=True)
     Confidence_PreExam3 = models.CharField(max_length=100, null=True, blank=True)
